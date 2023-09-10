@@ -5,9 +5,9 @@ import random
 
 def clear():
     if os.name == "nt":
-        _ = os.system("cls")
+        os.system("cls")
     else:
-        _ = os.system("clear")
+        os.system("clear")
 
 def spacer(word):
     spacer = " "*(20 - len(word))
@@ -45,7 +45,7 @@ def main():
             print(f"{'-'*60}")
             index = 0
             for i in letters:
-                print(f"{words[index]}{spacer(words[index])}{correct[index]}{spacer(str(correct[index]))}{incorrect[index]}") ## nnnnnnnnn -- nineteen
+                print(f"{words[index]}{spacer(words[index])}{correct[index]}{spacer(str(correct[index]))}{incorrect[index]}") 
                 index+=1
 
             if(perfectRun == True):
